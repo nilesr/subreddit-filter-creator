@@ -3,6 +3,7 @@ from iso639 import is_valid639_1
 ascii = string.ascii_lowercase
 table_true = "[Yes](/wiki_table_true)"
 table_false =  "[No](/wiki_table_false)"
+subreddit = "FreeGamesOnSteam"
 def nextid(old):
     if old[1] != "z":
         return old[0] + ascii[ascii.index(old[1])+1]
@@ -40,5 +41,5 @@ for f in range(3):
 print ("Subdomain | " + " | ".join(f[0] for f in flairs))
 print("-|" + "|".join([":-:" for i in range(len(flairs))]))
 for table in tables:
-    print("[`" + table[1] + "`](http://"+table[1]+".reddit.com/r/FreeGamesOnSteam) | " + " | ".join(table[0]))
+    print("[`" + table[1] + "`](http://"+table[1]+".reddit.com/r/"+subreddit+") | " + " | ".join(table[0]))
 
