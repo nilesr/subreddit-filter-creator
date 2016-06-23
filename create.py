@@ -13,7 +13,8 @@ flairs = [
     ["No hrkgame", "div.link[data-domain='hrkgame.com']"],
     ["No dlc", ".linkflair-dlc"],
     ["No ended giveaways", ".linkflair-ended"],
-    ["No gleam.io", "div.link[data-domain='gleam.io']"]
+    ["No gleam.io", "div.link[data-domain='gleam.io']"],
+    ["No DLH", "div.link[data-domain='dlh.net']"]
 ]
 combinations = []
 tables = []
