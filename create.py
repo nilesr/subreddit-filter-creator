@@ -12,11 +12,13 @@ def nextid(old):
 flairs = [
     ["No hrkgame", "div.link[data-domain='hrkgame.com']"],
     ["No dlc", ".linkflair-dlc"],
+    ["No beta", ".linkflair-beta"],
     ["No ended giveaways", ".linkflair-ended"],
     ["No gleam.io", "div.link[data-domain='gleam.io']"],
     ["No DLH", "div.link[data-domain='dlh.net']"],
     ["No gimme.one", "div.link[data-domain='gimme.one']"]
 ]
+inuse = ["nd", "ft", "zz", "hk", "dh", "ng", "zy"]
 combinations = []
 tables = []
 for i in range(2, len(flairs)+1):
@@ -35,7 +37,7 @@ for f in combinations:
             table.append(table_false)
     tables.append([table, current_id])
     current_id = nextid(current_id)
-    while is_valid639_1(current_id):
+    while is_valid639_1(current_id) or current_id in inuse:
         current_id = nextid(current_id)
 
 for f in range(3):
