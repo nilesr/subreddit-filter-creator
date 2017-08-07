@@ -15,8 +15,9 @@ flairs = [
     ["No beta", ".linkflair-beta"],
     ["No ended giveaways", ".linkflair-ended"],
     ["No gleam.io", "div.link[data-domain='gleam.io']"],
-    ["No DLH", "div.link[data-domain='dlh.net']"],
-    ["No alienware", "div.link[data-domain='alienware.com']"]
+    #["No DLH", "div.link[data-domain='dlh.net']"],
+    ["No marvelousga", "div.link[data-domain='marvelousga.com']"],
+    ["No alienware", "div.link[data-domain='alienware.com']"],
 ]
 inuse = ["nd", "ft", "zz", "hk", "dh", "ng", "zy"]
 combinations = []
